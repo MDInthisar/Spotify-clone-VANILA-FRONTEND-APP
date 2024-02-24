@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#songscreen {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* gap: 5px; */
+}
+#left {
+  width: 25vw;
+  height: 85vh;
+  margin: 1vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#left #menu {
+  width: 100%;
+  min-height: 20%;
+  background-color: #121212;
+  border-radius: 1vw;
+  margin-bottom: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu #item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1vw;
+  padding: 0 1vw;
+}
+
+#item i {
+  font-size: 2vw;
+  color: #a7a7a7;
+}
+#item h1 {
+  font-size: 1.1vw;
+  letter-spacing: 1px;
+  color: #a7a7a7;
+}
+
+#item:hover i {
+  color: white;
+}
+#item:hover h1 {
+  color: white;
+}
+
+#left #libraly {
+  width: 100%;
+  height: 77.5%;
+  background-color: #121212;
+  border-radius: 1vw;
+  margin-bottom: 1vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  overflow-y: scroll;
+}
+#left #libraly::-webkit-scrollbar {
+  width: 1px;
+}
+#left #libraly::-webkit-scrollbar-thumb {
+  background-color: #999;
+}
+
+#libraly #headingbar {
+  width: 100%;
+  height: 10vh;
+  /* background-color: #af9f9f; */
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw;
+}
+
+#headingbar #items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+}
+
+#headingbar #items i {
+  font-size: 2vw;
+  color: #a7a7a7;
+}
+
+#headingbar #items h1 {
+  font-size: 1.1vw;
+  letter-spacing: 1px;
+  color: #a7a7a7;
+}
+
+#mysongslist {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: red; */
+}
+
+#mysongslist #songlist {
+    width: 96%;
+    min-height: 5vw;
+    margin: 0.3vw;
+    border-radius: 0.3vw;
+    background: #1d1d1d;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+#mysongslist #songlist:hover {
+  background-color: #242222;
+}
+#mysongslist #songlist:active {
+  scale: 0.9;
+}
+
+#songlist #songlistbox {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 0.3vw;
+}
+#songlist #songlistbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#songlist h1 {
+  color: white;
+  font-size: 1vw;
+  letter-spacing: 1px;
+}
+
+#right {
+  width: 75vw;
+  height: 82.6vh;
+  background-color: #121212;
+  margin: 1vw;
+  border-radius: 1vw;
+  overflow-y: scroll;
+}
+#right::-webkit-scrollbar {
+  width: 1px;
+}
+#right::-webkit-scrollbar-thumb {
+  background-color: #999;
+}
+
+#right #heading {
+  width: 100%;
+  height: 5vw;
+  background-color: #1d1d1d;
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+#heading h1 {
+  font-size: 2vw;
+  letter-spacing: 1px;
+  color: white;
+}
+#heading .btnbox button {
+  padding: 0.5vw 1vw;
+  border-radius: 1vw;
+  border: none;
+  background-color: #ffffff;
+  color: #1d1d1d;
+  font-size: 1vw;
+  margin: 0 0.3vw;
+}
+
+.songcards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.songcards .songcard {
+    width: 15vw;
+    min-height: 19vw;
+    background-color: #1d1d1d;
+    margin: 1vw;
+    border-radius: 0.3vw;
+}
+.songcards .songcard:active {
+  scale: 0.9;
+}
+
+.songcard .imgbox{
+padding: 0.5vw;
+    width: 100%;
+    height: 72%;
+}
+
+.songcard h1{
+      font-size: 1.2vw;
+    color: white;
+    padding: 0 1vw;
+    letter-spacing: 1px;
+}
+.songcard p{
+        font-size: 0.8vw;
+    color: white;
+    padding: 1vw 0.5vw;
+    letter-spacing: 1px;
+    font-weight: 100;
+    line-height: 1vw;
+}
+
+.songcard .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 1vw; */
+  opacity: 1;
+}
+
+#playbar {
+  width: 100vw;
+  height: 6vw;
+  background-color: #1d1d1d;
+  position: absolute;
+  bottom: 0.1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+#playbar i {
+  font-size: 3vw;
+  color: white;
+}
+#playbar i:active {
+  scale: 0.9;
+  color: #a7a7a7;
+}
