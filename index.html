@@ -3,50 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Spotify  </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="main">
       <div id="songscreen">
         <div id="left">
-            <div id="menu">
-                <div id="item">
-                    <i class="ri-home-5-fill"></i>
-                    <h1>Home</h1>
-                </div>
-                <div id="item">
-                    <i class="ri-search-line"></i>
-                    <h1>Search</h1>
-                </div>
+          <div id="menu">
+            <div id="item">
+              <i class="ri-home-5-fill"></i>
+              <h1>Home</h1>
             </div>
-            <div id="libraly">
-                <div id="headingbar">
-                    <div id="items">
-                        <i class="ri-bookmark-fill"></i>
-                        <h1>Library</h1>
-                    </div>
-                    <div id="items">
-                        <i class="ri-add-fill"></i>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
-                <div id="mysongslist">
-                    <div id="songlist">
-                      <div id="songlistbox">
-                        <img src="./img/leo.avif" alt="">
-                        </div>
-                        <h1>Leo Bloody sweet</h1>
-                    </div>
-                </div>
+            <div id="item">
+              <i class="ri-search-line"></i>
+              <h1>Search</h1>
             </div>
+          </div>
+          <div id="libraly">
+            <div id="headingbar">
+              <div id="items">
+                <i class="ri-bookmark-fill"></i>
+                <h1>Library</h1>
+              </div>
+              <div id="items">
+                <i class="ri-add-fill"></i>
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </div>
+            <div class="mysongslist"></div>
+          </div>
         </div>
         <div id="right">
           <div id="heading">
@@ -56,35 +52,17 @@
               <button>Signup</button>
             </div>
           </div>
-          <div class="songcards">
-            <div class="songcard">
-              <div class="imgbox">
-                <img src="./img/leo.avif" alt="">
-              </div>
-              <h1>Happy hits</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="songcard">
-              <div class="imgbox">
-                <img src="./img/jawaan.jpg" alt="">
-              </div>
-              <h1>Happy hits</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="songcard">
-              <div class="imgbox">
-                <img src="./img/animal.jpg" alt="">
-              </div>
-              <h1>Happy hits</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
+          <div id="songcards"></div>
         </div>
       </div>
       <div id="playbar">
-        <i class="ri-skip-back-fill"></i>
-        <i class="ri-play-circle-fill" id="play"></i>
-        <i class="ri-skip-forward-fill"></i>
+        <div class="crrsong">
+        </div>
+        <div class="icon">
+          <h6 id="back"><i class="ri-skip-back-fill"></i></h6>
+          <h6 id="play"><i class="ri-play-circle-fill"></i></h6>
+          <h6 id="forward"><i class="ri-skip-forward-fill"></i></h6>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
