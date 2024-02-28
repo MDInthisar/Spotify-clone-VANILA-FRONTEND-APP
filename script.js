@@ -12,6 +12,48 @@ let data = [
     mp3: "./song/leo.mp3",
   },
   {
+    img: "./img/leo.avif",
+    title: " Leo Song",
+    contect: "LOremLOremLOremLOrem",
+    mp3: "./song/leo.mp3",
+  },
+  {
+    img: "./img/leo.avif",
+    title: " Leo Song",
+    contect: "LOremLOremLOremLOrem",
+    mp3: "./song/leo.mp3",
+  },
+  {
+    img: "./img/leo.avif",
+    title: " Leo Song",
+    contect: "LOremLOremLOremLOrem",
+    mp3: "./song/leo.mp3",
+  },
+  {
+    img: "./img/leo.avif",
+    title: " Leo Song",
+    contect: "LOremLOremLOremLOrem",
+    mp3: "./song/leo.mp3",
+  },
+  {
+    img: "./img/leo.avif",
+    title: " Leo Song",
+    contect: "LOremLOremLOremLOrem",
+    mp3: "./song/leo.mp3",
+  },
+  {
+    img: "./img/leo.avif",
+    title: " Leo Song",
+    contect: "LOremLOremLOremLOrem",
+    mp3: "./song/leo.mp3",
+  },
+  {
+    img: "./img/leo.avif",
+    title: " Leo Song",
+    contect: "LOremLOremLOremLOrem",
+    mp3: "./song/leo.mp3",
+  },
+  {
     img: "./img/jawaan.jpg",
     title: " Jawaan Song",
     contect: "LOremLOremLOremLOrem",
@@ -97,14 +139,12 @@ forward.addEventListener("click", () => {
   }
 });
 
-back.addEventListener('click',()=>{
-  if(slectedsong >= 0)
-  {
-    slectedsong--
+back.addEventListener("click", () => {
+  if (slectedsong >= 0) {
+    slectedsong--;
     main();
     audio.play();
-  }
-  else{
+  } else {
     back.style.opacity = 0.4;
   }
-})
+});
