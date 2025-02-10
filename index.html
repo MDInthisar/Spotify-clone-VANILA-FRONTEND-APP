@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify  </title>
+    <title>Spotify-mohammed-Inthisar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +27,14 @@
             </div>
             <div id="item">
               <i class="ri-search-line"></i>
-              <h1>Search</h1>
+              <!-- Add this in the #heading div -->
+              <div class="search-container">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Search songs..."
+                />
+              </div>
             </div>
           </div>
           <div id="libraly">
@@ -46,18 +53,17 @@
         </div>
         <div id="right">
           <div id="heading">
-            <h1>Spotify</h1>
-            <div class="btnbox">
+            <h1>Spotify-Mohammed-Inthisar</h1>
+            <!-- <div class="btnbox">
               <button>Login</button>
               <button>Signup</button>
-            </div>
+            </div> -->
           </div>
           <div id="songcards"></div>
         </div>
       </div>
       <div id="playbar">
-        <div class="crrsong">
-        </div>
+        <div class="crrsong"></div>
         <div class="icon">
           <h6 id="back"><i class="ri-skip-back-fill"></i></h6>
           <h6 id="play"><i class="ri-play-circle-fill"></i></h6>

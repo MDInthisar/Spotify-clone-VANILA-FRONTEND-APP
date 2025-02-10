@@ -4,9 +4,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-html::-webkit-scrollbar{
+
+html::-webkit-scrollbar {
   width: 1px;
 }
+
 #main {
   width: 100vw;
   height: 100vh;
@@ -18,10 +20,8 @@ html::-webkit-scrollbar{
   height: 100vh;
   background-color: black;
   display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  /* gap: 5px; */
 }
+
 #left {
   width: 25vw;
   height: 85vh;
@@ -42,13 +42,12 @@ html::-webkit-scrollbar{
   justify-content: center;
   align-items: center;
 }
+
 #menu #item {
   width: 100%;
   height: 100%;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
-  /* justify-content: center; */
   gap: 1vw;
   padding: 0 1vw;
 }
@@ -57,15 +56,14 @@ html::-webkit-scrollbar{
   font-size: 2vw;
   color: #a7a7a7;
 }
+
 #item h1 {
   font-size: 1.1vw;
   letter-spacing: 1px;
   color: #a7a7a7;
 }
 
-#item:hover i {
-  color: white;
-}
+#item:hover i,
 #item:hover h1 {
   color: white;
 }
@@ -78,13 +76,13 @@ html::-webkit-scrollbar{
   margin-bottom: 1vw;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
   overflow-y: scroll;
 }
+
 #left #libraly::-webkit-scrollbar {
   width: 1px;
 }
+
 #left #libraly::-webkit-scrollbar-thumb {
   background-color: #999;
 }
@@ -92,7 +90,6 @@ html::-webkit-scrollbar{
 #libraly #headingbar {
   width: 100%;
   height: 10vh;
-  /* background-color: #af9f9f; */
   border-radius: 1vw;
   display: flex;
   align-items: center;
@@ -124,38 +121,38 @@ html::-webkit-scrollbar{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* background-color: red; */
 }
 
 .mysongslist .songlist {
-    width: 96%;
-    min-height: 5vw;
-    margin: 0.3vw;
-    border-radius: 0.3vw;
-    background: #1d1d1d;
-    padding: 1vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1vw;
+  width: 96%;
+  min-height: 5vw;
+  margin: 0.3vw;
+  border-radius: 0.3vw;
+  background: #1d1d1d;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1vw;
+  cursor: pointer;
 }
 
 .mysongslist .songlist:hover {
   background-color: #242222;
 }
+
 .mysongslist .songlist:active {
-  scale: 0.9;
+  transform: scale(0.98);
 }
 
-.songlist #songlistbox {
+.songlist .songlistbox {
   width: 50px;
   height: 50px;
-  background-color: white;
   border-radius: 0.3vw;
 }
-.songlist #songlistbox img {
+
+.songlist .songlistbox img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -165,7 +162,7 @@ html::-webkit-scrollbar{
   color: white;
   font-size: 1vw;
   letter-spacing: 1px;
-      font-weight: 100;
+  font-weight: 100;
 }
 
 #right {
@@ -176,9 +173,11 @@ html::-webkit-scrollbar{
   border-radius: 1vw;
   overflow-y: scroll;
 }
+
 #right::-webkit-scrollbar {
   width: 1px;
 }
+
 #right::-webkit-scrollbar-thumb {
   background-color: #999;
 }
@@ -193,11 +192,13 @@ html::-webkit-scrollbar{
   justify-content: space-between;
   padding: 0 2vw;
 }
+
 #heading h1 {
   font-size: 2vw;
   letter-spacing: 1px;
   color: white;
 }
+
 #heading .btnbox button {
   padding: 0.5vw 1vw;
   border-radius: 1vw;
@@ -206,52 +207,53 @@ html::-webkit-scrollbar{
   color: #1d1d1d;
   font-size: 1vw;
   margin: 0 0.3vw;
+  cursor: pointer;
 }
 
 #songcards {
   display: flex;
   flex-wrap: wrap;
-  pointer-events: visible;
 }
+
 #songcards .songcard {
-    width: 15vw;
-    min-height: 19vw;
-    background-color: #1d1d1d;
-    margin: 1vw;
-    border-radius: 0.3vw;
+  width: 15vw;
+  min-height: 19vw;
+  background-color: #1d1d1d;
+  margin: 1vw;
+  border-radius: 0.3vw;
+  cursor: pointer;
 }
+
 #songcards .songcard:active {
-  scale: 0.9;
+  transform: scale(0.98);
 }
 
-.songcard .imgbox{
-padding: 0.5vw;
-    width: 100%;
-    height: 72%;
-    pointer-events: none;
+.songcard .imgbox {
+  padding: 0.5vw;
+  width: 100%;
+  height: 72%;
 }
 
-.songcard h1{
-      font-size: 1.2vw;
-    color: white;
-    padding: 0 1vw;
-    letter-spacing: 1px;
+.songcard h1 {
+  font-size: 1.2vw;
+  color: white;
+  padding: 0 1vw;
+  letter-spacing: 1px;
 }
-.songcard p{
-        font-size: 0.8vw;
-    color: white;
-    padding: 1vw 0.5vw;
-    letter-spacing: 1px;
-    font-weight: 100;
-    line-height: 1vw;
+
+.songcard p {
+  font-size: 0.8vw;
+  color: white;
+  padding: 1vw 0.5vw;
+  letter-spacing: 1px;
+  font-weight: 100;
+  line-height: 1vw;
 }
 
 .songcard .imgbox img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 1vw; */
-  opacity: 1;
 }
 
 #playbar {
@@ -265,7 +267,6 @@ padding: 0.5vw;
   justify-content: center;
   gap: 1vw;
 }
-/* Add this to your existing CSS */
 
 @keyframes rotateAnimation {
   from {
@@ -280,24 +281,59 @@ padding: 0.5vw;
   height: 4vw;
   width: 4vw;
   border-radius: 50%;
-  animation: rotateAnimation 10s linear infinite; /* Adjust the duration and timing function as needed */
+  animation: rotateAnimation 10s linear infinite;
+  animation-play-state: paused;
 }
 
-/* ... rest of your CSS ... */
+#playbar.playing .crrsong {
+  animation-play-state: running;
+}
 
-
-.crrsong img{
-  width: 100%;height: 100%;object-fit: cover;
+.crrsong img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
-.icon{
-  display: flex;align-items: center;justify-content: center;
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5vw;
 }
+
 #playbar i {
   font-size: 3vw;
   color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
+
 #playbar i:active {
-  scale: 0.9;
+  transform: scale(0.9);
   color: #a7a7a7;
+}
+
+.search-container {
+  flex: 1;
+  margin: 0 2vw;
+  max-width: 300px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.7vw 1.5vw;
+  border-radius: 2vw;
+  border: none;
+  background: #333;
+  color: white;
+  font-size: 1vw;
+  transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+  outline: none;
+  background: #444;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
