@@ -270,6 +270,60 @@
 .volume-controls:hover input[type="range"]::-webkit-slider-thumb {
     opacity: 1;
 }
+/* Add to existing CSS */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--spotify-dark-gray);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.spotify-logo {
+    font-family: 'Circular', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.artist-name {
+    font-family: 'Circular', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+    
+    .artist-name {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .spotify-logo {
+        font-size: 1.2rem;
+    }
+    
+    .user-button {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
 
 /* Mobile optimization */
 @media (max-width: 480px) {
@@ -343,6 +397,12 @@
     </style>
 </head>
 <body>
+  <!-- Add this inside the <header class="header"> section -->
+    <header class="header">
+      <div class="branding">
+          <span class="spotify-logo">Spotify-Mohammed Inthisar</span>
+          </div>
+    </header>
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
