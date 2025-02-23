@@ -1,2 +1,2 @@
 Spotify clone
-https://mdinthisar.github.io/Spotify-clone/
+https://spotify-clone-vanila-frontend-app.vercel.app/
